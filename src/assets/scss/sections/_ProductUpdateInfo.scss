@@ -1,0 +1,24 @@
+
+.product-update-box {
+
+
+    .container {
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+
+        .update-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+
+            .img{
+                margin-right: 2rem;
+            }
+
+            .text {
+                margin-left: 2rem;
+            }
+        }
+    }
+}   

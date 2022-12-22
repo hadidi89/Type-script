@@ -1,0 +1,54 @@
+.showcase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 945px;
+    margin-bottom: 5rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+    
+    .LeftImage {
+        margin-left: -120px;
+        margin-top: 6rem;
+    }
+
+    .RightImage{
+        margin-right: -120px;
+        margin-top: 6rem;
+    }
+
+    .showcase-body {
+        text-align: center;
+
+        h1{
+            font-size: 65px;
+            font-weight: 800;
+        }
+
+        P{
+            margin-top: 50PX;
+            margin-bottom: 35px;
+            font-size: 20px;
+        }
+    }
+
+}
+
+    
+@media screen and (max-width: 1600px ) {
+    .showcase{
+        height: 500px;
+
+        .LeftImage,
+        .RightImage{
+            display: none;
+        }
+        .showcase-body {
+            margin: auto;
+            
+        }
+        
+    }
+    
+}
+

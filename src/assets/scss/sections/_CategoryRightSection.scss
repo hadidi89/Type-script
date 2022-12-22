@@ -1,0 +1,216 @@
+.flash-left-grid,
+.flash-right-grid {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-bottom: 60px;
+        margin-top: 60px;
+        
+
+        .flash-left-box,
+        .flash-right-box {
+            width: 815px;
+            height: auto;
+            background-color: $color-lightgray;
+
+            .flash-title {
+                font-size: 45px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 40%;
+                color: $color-white;
+            }
+            .btn-white {
+                position: relative;
+                background-color: $color-white;
+                width: 186px;
+                height: 60px;
+                border: none;
+                margin-left: 39%;
+
+            }
+            .btn-white::before,
+            .btn-white::after {
+                position: absolute;
+                content: '';
+                width: 20px;
+                height: 20px;
+            }
+            .btn-white::before{
+                left:10px;
+                top:10px;
+                border-left:3px solid $color-dark;
+                border-top:3px solid $color-dark;
+            }
+            .btn-white::after{
+                right:10px;
+                bottom:10px;
+                border-right:3px solid $color-dark;
+                border-bottom:3px solid $color-dark;
+            }
+            .btn-white:hover {
+                background-color: $color-dark;
+                color: $color-white;
+            }
+     
+        }
+        .flash-left-grid-boxes{
+            margin-left: 30%;
+        }
+        .flash-right-grid-boxes{
+            margin-right: 30%;
+        }
+        
+    }
+    hr {
+        margin-left: 17%;
+        width: 1110px;
+    }
+
+}
+@media screen and (max-width: 567px) {
+
+    .flash-left-grid,
+    .flash-right-grid {
+        
+        .container {
+            display: block;
+
+            .flash-left-box,
+            .flash-right-box {
+                width: 100%;
+                height: 100%;
+                margin-bottom:1rem;
+
+                .flash-title {
+                    font-size: 35px;
+                    font-weight: bold;
+                    margin-top: 30%;
+                    padding: 3rem;
+                }
+                .btn-white {
+                    margin-left: 25%;
+                    margin-bottom: 15%;
+
+                }
+        
+            }
+            .flash-left-grid-boxes,
+            .flash-right-grid-boxes{
+                margin: auto;
+            }
+            
+        }
+        hr {
+            display: none;
+        }
+
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width:992px){
+    .flash-left-grid,
+    .flash-right-grid {
+        
+        .container {
+            display: block;
+
+            .flash-left-box,
+            .flash-right-box {
+                width: auto;
+                height: 300px;
+                margin-bottom:5rem;
+                background-color: $color-lightgray;
+
+                .flash-title {
+                    font-size: 45px;
+                    margin-top: 10%;
+                    padding: 5rem;
+                }
+                .btn-white {
+                    text-align: center;
+                    bottom: 15%;
+                }
+        
+            }
+            .flash-left-grid-boxes,
+            .flash-right-grid-boxes{
+                margin: auto;
+            }
+            
+        }
+        hr {
+            display: none;
+        }
+
+    }
+}
+@media screen and (min-width: 993px) and (max-width:1280px){
+    .flash-left-grid,
+    .flash-right-grid {
+        
+        .container {
+            display: block;
+
+            .flash-left-box,
+            .flash-right-box {
+                width: auto;
+                height: 300px;
+                margin-bottom:5rem;
+
+                .flash-title {
+                    font-size: 45px;
+                    margin-top: 10%;
+                    padding: 5rem;
+                }
+                .btn-white {
+                    text-align: center;
+                    bottom: 15%;
+                    margin-left: 42%;
+                }
+        
+            }
+            .flash-left-grid-boxes,
+            .flash-right-grid-boxes{
+                margin: auto;
+            }
+            
+        }
+        hr {
+        display: none;
+        }
+    }
+}
+@media screen and (min-width: 1281px) and (max-width:1679px){
+    .flash-left-grid,
+    .flash-right-grid {
+        
+        .container {
+            display: grid;
+
+            .flash-left-box,
+            .flash-right-box {
+                width: 100%;
+                height: 100%;
+
+                .flash-title {
+                    text-align: center;
+                    
+                }
+                .btn-white {
+                    text-align: center;
+                    margin-left: 35%;
+                }    
+        
+            }
+            
+            .flash-right-grid-boxes{
+                margin-right: 30%;
+                
+            }
+            
+        }
+    }
+}
